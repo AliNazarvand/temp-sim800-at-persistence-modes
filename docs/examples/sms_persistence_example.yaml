@@ -1,0 +1,11 @@
+# Example: SMS persistence entry
+command: "AT+CMGF"
+parameter_name: "mode"
+persistence_mode: "explicit_save"
+save_command: "AT&W"
+save_scope: "both_profiles"
+power_loss_behavior: "retained"
+reset_behavior: "reset_to_profile"
+factory_reset_behavior: "reset_to_factory_default"
+requires_reboot: false
+notes: "AT&W saves to active profile."

@@ -1,0 +1,105 @@
+metadata:
+  description: "STK AT command persistence modes"
+  schema_version: "1.0.0"
+  database_version: "1.0.0"
+  extracted_from:
+    - "SIM800 Series_AT Command Manual_V1.01.pdf"
+    - "SIM800 Series_AT Command Manual_V1.10.pdf"
+    - "SIM800 Series_AT Command Manual_V1.12.pdf"
+
+entries:
+  - command: "AT+STKC"
+    parameter_name: "cmd"
+    profile_number: null
+    category: "stk"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 11, Section AT+STKC"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 344
+    notes: "STK command response is per-session; inferred from AT command manual."
+
+  - command: "AT+STKEN"
+    parameter_name: "enable"
+    profile_number: null
+    category: "stk"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 11, Section AT+STKEN"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 340
+    notes: "STK enable state; inferred from AT command manual."
+
+  - command: "AT+STKR"
+    parameter_name: "r"
+    profile_number: null
+    category: "stk"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 11, Section AT+STKR"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 342
+    notes: "STK result response is per-session; inferred from AT command manual."
+
+  - command: "AT+STKTR"
+    parameter_name: "tr"
+    profile_number: null
+    category: "stk"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 11, Section AT+STKTR"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 346
+    notes: "STK terminal response is per-session; inferred from AT command manual."

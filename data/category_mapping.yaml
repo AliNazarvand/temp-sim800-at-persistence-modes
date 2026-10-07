@@ -1,0 +1,68 @@
+# Machine-readable mapping: chapter_source -> category -> yaml_file -> cpp_header -> namespace -> array_name
+categories:
+  basic_at:
+    category: "at_basic"
+    yaml_file: "at_basic.yaml"
+    cpp_header: "at_basic.hpp"
+    cpp_namespace: "sim800::persistence::at_basic"
+    cpp_array_name: "AT_BASIC_PERSISTENCE"
+  at_3gpp_27007:
+    category: "at_3gpp_27007"
+    yaml_file: "at_3gpp.yaml"
+    cpp_header: "at_3gpp.hpp"
+    cpp_namespace: "sim800::persistence::at_3gpp"
+    cpp_array_name: "AT_3GPP_PERSISTENCE"
+  at_3gpp_27005:
+    category: "at_3gpp_27005"
+    yaml_file: "at_3gpp.yaml"
+    cpp_header: "at_3gpp.hpp"
+    cpp_namespace: "sim800::persistence::at_3gpp"
+    cpp_array_name: "AT_3GPP_PERSISTENCE"
+  sms:
+    category: "sms"
+    yaml_file: "sms.yaml"
+    cpp_header: "sms.hpp"
+    cpp_namespace: "sim800::persistence::sms"
+    cpp_array_name: "SMS_PERSISTENCE"
+  gprs:
+    category: "gprs"
+    yaml_file: "gprs.yaml"
+    cpp_header: "gprs.hpp"
+    cpp_namespace: "sim800::persistence::gprs"
+    cpp_array_name: "GPRS_PERSISTENCE"
+  tcpip:
+    category: "tcpip"
+    yaml_file: "tcpip.yaml"
+    cpp_header: "tcpip.hpp"
+    cpp_namespace: "sim800::persistence::tcpip"
+    cpp_array_name: "TCPIP_PERSISTENCE"
+  http:
+    category: "http"
+    yaml_file: "http.yaml"
+    cpp_header: "http.hpp"
+    cpp_namespace: "sim800::persistence::http"
+    cpp_array_name: "HTTP_PERSISTENCE"
+  ftp:
+    category: "ftp"
+    yaml_file: "ftp.yaml"
+    cpp_header: "ftp.hpp"
+    cpp_namespace: "sim800::persistence::ftp"
+    cpp_array_name: "FTP_PERSISTENCE"
+  audio:
+    category: "audio"
+    yaml_file: "audio.yaml"
+    cpp_header: "audio.hpp"
+    cpp_namespace: "sim800::persistence::audio"
+    cpp_array_name: "AUDIO_PERSISTENCE"
+  stk:
+    category: "stk"
+    yaml_file: "stk.yaml"
+    cpp_header: "stk.hpp"
+    cpp_namespace: "sim800::persistence::stk"
+    cpp_array_name: "STK_PERSISTENCE"
+  init:
+    category: "init"
+    yaml_file: "init.yaml"
+    cpp_header: "init.hpp"
+    cpp_namespace: "sim800::persistence::init"
+    cpp_array_name: "INIT_PERSISTENCE"

@@ -1,0 +1,273 @@
+metadata:
+  description: "SMS AT command persistence modes"
+  schema_version: "1.0.0"
+  database_version: "1.0.0"
+  extracted_from:
+    - "SIM800 Series_AT Command Manual_V1.01.pdf"
+    - "SIM800 Series_AT Command Manual_V1.10.pdf"
+    - "SIM800 Series_AT Command Manual_V1.12.pdf"
+
+entries:
+  - command: "AT+CMMS"
+    parameter_name: "n"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CMMS"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 160
+    notes: "More messages to send mode; inferred from AT command manual."
+
+  - command: "AT+CMGF"
+    parameter_name: "mode"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CMGF"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 145
+    notes: "PDF documents AT&W as the save command; AT&W saves to the active profile."
+
+  - command: "AT+CMGS"
+    parameter_name: "da"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CMGS"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 150
+    notes: "Destination address is per-message and never persisted."
+
+  - command: "AT+CMOD"
+    parameter_name: "mode"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CMOD"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 158
+    notes: "Message mode configuration; inferred from AT command manual."
+
+  - command: "AT+CNMI"
+    parameter_name: "mode"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CNMI"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 162
+    notes: "New message indication; inferred from AT command manual."
+
+  - command: "AT+CRC"
+    parameter_name: "mode"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CRC"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 159
+    notes: "Cellular result codes; inferred from AT command manual."
+
+  - command: "AT+CSCA"
+    parameter_name: "sca"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CSCA"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 155
+    notes: "Service center address; inferred from AT command manual."
+
+  - command: "AT+CSCB"
+    parameter_name: "mode"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CSCB"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 168
+    notes: "Cell broadcast message types; inferred from AT command manual."
+
+  - command: "AT+CSDH"
+    parameter_name: "show"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CSDH"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 166
+    notes: "Show text mode parameters; inferred from AT command manual."
+
+  - command: "AT+CSMP"
+    parameter_name: "fo"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CSMP"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 164
+    notes: "Set text mode parameters; inferred from AT command manual."
+
+  - command: "AT+CSMS"
+    parameter_name: "service"
+    profile_number: null
+    category: "sms"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 5, Section AT+CSMS"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 140
+    notes: "Select message service; inferred from AT command manual."

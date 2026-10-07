@@ -1,0 +1,345 @@
+metadata:
+  description: "Basic AT persistence parameters and action commands"
+  schema_version: "1.0.0"
+  database_version: "1.0.0"
+  extracted_from:
+    - "SIM800 Series_AT Command Manual_V1.01.pdf"
+    - "SIM800 Series_AT Command Manual_V1.10.pdf"
+    - "SIM800 Series_AT Command Manual_V1.12.pdf"
+
+entries:
+  - command: "AT&C"
+    parameter_name: "dcd"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT&C"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 36
+    notes: "DCD behaviour; inferred from AT command manual; awaiting direct citation extraction."
+
+  - command: "AT&D"
+    parameter_name: "dtr"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT&D"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 37
+    notes: "DTR behaviour; inferred from AT command manual; awaiting direct citation extraction."
+
+  - command: "AT&F"
+    parameter_name: "factory_defaults"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "momentary_action"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "not_applicable"
+    reset_behavior: "not_applicable"
+    factory_reset_behavior: "not_applicable"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT&F"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 47
+    notes: "Action command. Base form AT&F resets all parameters to factory defaults; derivatives AT&F0 and AT&F1 documented but not registered."
+
+  - command: "AT&S"
+    parameter_name: "dsr"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT&S"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 39
+    notes: "DSR behaviour; inferred from AT command manual; awaiting direct citation extraction."
+
+  - command: "AT&V"
+    parameter_name: "configuration_view"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "momentary_action"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "not_applicable"
+    reset_behavior: "not_applicable"
+    factory_reset_behavior: "not_applicable"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT&V"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 48
+    notes: "Action command. Base form AT&V is a read-only view command; derivatives AT&V0 and AT&V1 documented but not registered."
+
+  - command: "AT&W"
+    parameter_name: "profile"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "momentary_action"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "not_applicable"
+    reset_behavior: "not_applicable"
+    factory_reset_behavior: "not_applicable"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT&W"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 45
+    notes: "Action command. Base form AT&W saves to active profile; derivatives AT&W0 and AT&W1 documented but not registered."
+
+  - command: "AT+CFUN"
+    parameter_name: "fun"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT+CFUN"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 34
+    notes: "Functionality level; inferred from AT command manual; awaiting direct citation extraction."
+
+  - command: "AT+CMEE"
+    parameter_name: "error_reporting"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT+CMEE"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 42
+    notes: "Error reporting mode persists after AT&W. Factory reset restores default."
+
+  - command: "AT+CSCS"
+    parameter_name: "charset"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT+CSCS"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 41
+    notes: "Character set selection; inferred from AT command manual; awaiting direct citation extraction."
+
+  - command: "AT+IPR"
+    parameter_name: "rate"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "auto_save"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "retained"
+    factory_reset_behavior: "retained"
+    requires_reboot: true
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section AT+IPR"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 40
+    notes: "Baud rate is stored automatically in NVRAM. Change takes effect after reboot."
+
+  - command: "ATE"
+    parameter_name: "echo"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section ATE"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 38
+    notes: "Echo mode is saved with AT&W to active profile."
+
+  - command: "ATV"
+    parameter_name: "format"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section ATV"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 43
+    notes: "Result code format; inferred from AT command manual; awaiting direct citation extraction."
+
+  - command: "ATX"
+    parameter_name: "format"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section ATX"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 44
+    notes: "Result code format with connect messages; inferred from AT command manual."
+
+  - command: "ATZ"
+    parameter_name: "profile"
+    profile_number: null
+    category: "at_basic"
+    persistence_mode: "momentary_action"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "not_applicable"
+    reset_behavior: "not_applicable"
+    factory_reset_behavior: "not_applicable"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 2, Section ATZ"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 46
+    notes: "Action command. Base form ATZ restores active profile; derivatives ATZ0 and ATZ1 documented but not registered."

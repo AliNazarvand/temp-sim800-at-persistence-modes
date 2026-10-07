@@ -1,0 +1,35 @@
+Start testing: Oct 07 22:39 Iran Standard Time
+----------------------------------------------------------
+Unable to find executable: D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build/test_generated_headers.exe
+1/2 Testing: test_generated_headers
+1/2 Test: test_generated_headers
+Command: ""
+Directory: D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build
+"test_generated_headers" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_generated_headers" end time: Oct 07 22:39 Iran Standard Time
+"test_generated_headers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build/test_doc_examples.exe
+2/2 Testing: test_doc_examples
+2/2 Test: test_doc_examples
+Command: ""
+Directory: D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build
+"test_doc_examples" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_doc_examples" end time: Oct 07 22:39 Iran Standard Time
+"test_doc_examples" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 07 22:39 Iran Standard Time

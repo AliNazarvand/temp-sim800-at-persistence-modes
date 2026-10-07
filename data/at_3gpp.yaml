@@ -1,0 +1,273 @@
+metadata:
+  description: "3GPP TS 27.007 / 27.005 AT command persistence modes"
+  schema_version: "1.0.0"
+  database_version: "1.0.0"
+  extracted_from:
+    - "SIM800 Series_AT Command Manual_V1.01.pdf"
+    - "SIM800 Series_AT Command Manual_V1.10.pdf"
+    - "SIM800 Series_AT Command Manual_V1.12.pdf"
+
+entries:
+  - command: "AT+CCWA"
+    parameter_name: "n"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CCWA"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 90
+    notes: "Call waiting control; inferred from AT command manual."
+
+  - command: "AT+CGREG"
+    parameter_name: "n"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CGREG"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 80
+    notes: "GPRS network registration status configuration."
+
+  - command: "AT+CLIP"
+    parameter_name: "n"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CLIP"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 88
+    notes: "Calling line identification; inferred from AT command manual."
+
+  - command: "AT+CLIR"
+    parameter_name: "n"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CLIR"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 89
+    notes: "Calling line identification restriction; inferred from AT command manual."
+
+  - command: "AT+COLP"
+    parameter_name: "n"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+COLP"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 92
+    notes: "Connected line identification presentation; inferred from AT command manual."
+
+  - command: "AT+CPBS"
+    parameter_name: "storage"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CPBS"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 100
+    notes: "Phonebook storage selection; inferred from AT command manual."
+
+  - command: "AT+CPMS"
+    parameter_name: "mem1"
+    profile_number: null
+    category: "at_3gpp_27005"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 4, Section AT+CPMS"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 110
+    notes: "Preferred message storage selection."
+
+  - command: "AT+CPOL"
+    parameter_name: "index"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CPOL"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 105
+    notes: "Preferred operator list; inferred from AT command manual."
+
+  - command: "AT+CREG"
+    parameter_name: "n"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CREG"
+    extraction_status_latest: "extracted_from_text"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 75
+    notes: "Network registration unsolicited result code configuration."
+
+  - command: "AT+CSSN"
+    parameter_name: "n"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CSSN"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 95
+    notes: "Supplementary service notifications; inferred from AT command manual."
+
+  - command: "AT+CUSD"
+    parameter_name: "n"
+    profile_number: null
+    category: "at_3gpp_27007"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 3, Section AT+CUSD"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 96
+    notes: "Unstructured supplementary service data; inferred from AT command manual."

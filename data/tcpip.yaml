@@ -1,0 +1,153 @@
+metadata:
+  description: "TCP/IP AT command persistence modes"
+  schema_version: "1.0.0"
+  database_version: "1.0.0"
+  extracted_from:
+    - "SIM800 Series_AT Command Manual_V1.01.pdf"
+    - "SIM800 Series_AT Command Manual_V1.10.pdf"
+    - "SIM800 Series_AT Command Manual_V1.12.pdf"
+
+entries:
+  - command: "AT+CIPCCFG"
+    parameter_name: "nmRetry"
+    profile_number: null
+    category: "tcpip"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 7, Section AT+CIPCCFG"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 230
+    notes: "Transparent mode config; inferred from AT command manual."
+
+  - command: "AT+CIPMODE"
+    parameter_name: "mode"
+    profile_number: null
+    category: "tcpip"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 7, Section AT+CIPMODE"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 224
+    notes: "Transparent transmission mode; inferred from AT command manual."
+
+  - command: "AT+CIPMUX"
+    parameter_name: "mode"
+    profile_number: null
+    category: "tcpip"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 7, Section AT+CIPMUX"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 220
+    notes: "TCP/IP multiplexing mode; inferred from AT command manual."
+
+  - command: "AT+CIPQSEND"
+    parameter_name: "mode"
+    profile_number: null
+    category: "tcpip"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 7, Section AT+CIPQSEND"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 228
+    notes: "Send mode selection; inferred from AT command manual."
+
+  - command: "AT+CIPRXGET"
+    parameter_name: "mode"
+    profile_number: null
+    category: "tcpip"
+    persistence_mode: "explicit_save"
+    save_command: "AT&W"
+    save_scope: "both_profiles"
+    nvram_address: null
+    power_loss_behavior: "retained"
+    reset_behavior: "reset_to_profile"
+    factory_reset_behavior: "reset_to_factory_default"
+    requires_reboot: false
+    is_volatile: false
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 7, Section AT+CIPRXGET"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 232
+    notes: "Receive data mode; inferred from AT command manual."
+
+  - command: "AT+CIPSTATUS"
+    parameter_name: "status"
+    profile_number: null
+    category: "tcpip"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 7, Section AT+CIPSTATUS"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 222
+    notes: "Connection status is runtime only; inferred from AT command manual."

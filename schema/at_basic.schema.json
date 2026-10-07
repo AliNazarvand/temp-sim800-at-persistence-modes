@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "at_basic persistence entries",
+  "type": "object",
+  "required": ["metadata","entries"],
+  "additionalProperties": false,
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["description","schema_version","database_version","extracted_from"],
+      "additionalProperties": false,
+      "properties": {
+        "description": {"type":"string"},
+        "schema_version": {"type":"string"},
+        "database_version": {"type":"string"},
+        "extracted_from": {"type":"array","items":{"type":"string"},"minItems":1}
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {"$ref": "common.schema.json#/definitions/persistence_entry"}
+    }
+  }
+}

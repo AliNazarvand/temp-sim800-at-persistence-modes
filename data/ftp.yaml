@@ -1,0 +1,177 @@
+metadata:
+  description: "FTP AT command persistence modes"
+  schema_version: "1.0.0"
+  database_version: "1.0.0"
+  extracted_from:
+    - "SIM800 Series_AT Command Manual_V1.01.pdf"
+    - "SIM800 Series_AT Command Manual_V1.10.pdf"
+    - "SIM800 Series_AT Command Manual_V1.12.pdf"
+
+entries:
+  - command: "AT+FTPCID"
+    parameter_name: "cid"
+    profile_number: null
+    category: "ftp"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 9, Section AT+FTPCID"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 285
+    notes: "FTP PDP context id; inferred from AT command manual."
+
+  - command: "AT+FTPGETNAME"
+    parameter_name: "name"
+    profile_number: null
+    category: "ftp"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 9, Section AT+FTPGETNAME"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 288
+    notes: "FTP get filename; inferred from AT command manual."
+
+  - command: "AT+FTPGETPATH"
+    parameter_name: "path"
+    profile_number: null
+    category: "ftp"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 9, Section AT+FTPGETPATH"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 287
+    notes: "FTP get path; inferred from AT command manual."
+
+  - command: "AT+FTPMODE"
+    parameter_name: "mode"
+    profile_number: null
+    category: "ftp"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 9, Section AT+FTPMODE"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 290
+    notes: "FTP mode is a per-session parameter; inferred from AT command manual."
+
+  - command: "AT+FTPPUTNAME"
+    parameter_name: "name"
+    profile_number: null
+    category: "ftp"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 9, Section AT+FTPPUTNAME"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 289
+    notes: "FTP put filename; inferred from AT command manual."
+
+  - command: "AT+FTPPUTPATH"
+    parameter_name: "path"
+    profile_number: null
+    category: "ftp"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 9, Section AT+FTPPUTPATH"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 286
+    notes: "FTP put path; inferred from AT command manual."
+
+  - command: "AT+FTPTYPE"
+    parameter_name: "type"
+    profile_number: null
+    category: "ftp"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 9, Section AT+FTPTYPE"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 292
+    notes: "FTP transfer type is a per-session parameter; inferred from AT command manual."

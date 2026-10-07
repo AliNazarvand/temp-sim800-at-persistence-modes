@@ -1,0 +1,228 @@
+# Inventory of AT commands referenced by the persistence database.
+commands:
+  - command: "AT&C"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT&D"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT&F"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT&S"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT&V"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT&W"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT+CFUN"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT+CMEE"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT+CSCS"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT+IPR"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "ATE"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "ATV"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "ATX"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "ATZ"
+    category: "at_basic"
+    persistence_tracked: true
+  - command: "AT+CCWA"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CGREG"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CLIP"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CLIR"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+COLP"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CPBS"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CPMS"
+    category: "at_3gpp_27005"
+    persistence_tracked: true
+  - command: "AT+CPOL"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CREG"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CSSN"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CUSD"
+    category: "at_3gpp_27007"
+    persistence_tracked: true
+  - command: "AT+CMMS"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CMGF"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CMGS"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CMOD"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CNMI"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CRC"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CSCA"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CSCB"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CSDH"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CSMP"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CSMS"
+    category: "sms"
+    persistence_tracked: true
+  - command: "AT+CGACT"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CGATT"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CGCLASS"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CGDCONT"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CGEQMIN"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CGEQREQ"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CGQMIN"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CGQREQ"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CGPADDR"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CIFSR"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CSTT"
+    category: "gprs"
+    persistence_tracked: true
+  - command: "AT+CIPCCFG"
+    category: "tcpip"
+    persistence_tracked: true
+  - command: "AT+CIPMODE"
+    category: "tcpip"
+    persistence_tracked: true
+  - command: "AT+CIPMUX"
+    category: "tcpip"
+    persistence_tracked: true
+  - command: "AT+CIPQSEND"
+    category: "tcpip"
+    persistence_tracked: true
+  - command: "AT+CIPRXGET"
+    category: "tcpip"
+    persistence_tracked: true
+  - command: "AT+CIPSTATUS"
+    category: "tcpip"
+    persistence_tracked: true
+  - command: "AT+HTTPPARA"
+    category: "http"
+    persistence_tracked: true
+  - command: "AT+FTPCID"
+    category: "ftp"
+    persistence_tracked: true
+  - command: "AT+FTPGETNAME"
+    category: "ftp"
+    persistence_tracked: true
+  - command: "AT+FTPGETPATH"
+    category: "ftp"
+    persistence_tracked: true
+  - command: "AT+FTPMODE"
+    category: "ftp"
+    persistence_tracked: true
+  - command: "AT+FTPPUTNAME"
+    category: "ftp"
+    persistence_tracked: true
+  - command: "AT+FTPPUTPATH"
+    category: "ftp"
+    persistence_tracked: true
+  - command: "AT+FTPTYPE"
+    category: "ftp"
+    persistence_tracked: true
+  - command: "AT+CLVL"
+    category: "audio"
+    persistence_tracked: true
+  - command: "AT+CMIC"
+    category: "audio"
+    persistence_tracked: true
+  - command: "AT+CMUT"
+    category: "audio"
+    persistence_tracked: true
+  - command: "AT+CRSL"
+    category: "audio"
+    persistence_tracked: true
+  - command: "AT+STKC"
+    category: "stk"
+    persistence_tracked: true
+  - command: "AT+STKEN"
+    category: "stk"
+    persistence_tracked: true
+  - command: "AT+STKR"
+    category: "stk"
+    persistence_tracked: true
+  - command: "AT+STKTR"
+    category: "stk"
+    persistence_tracked: true
+  - command: "AT+CPAS"
+    category: "init"
+    persistence_tracked: true
+  - command: "ATA"
+    category: "at_basic"
+    persistence_tracked: false
+    reason_not_tracked: "Call control action; no persistent parameter."
+  - command: "ATH"
+    category: "at_basic"
+    persistence_tracked: false
+    reason_not_tracked: "Call control action; no persistent parameter."
+  - command: "AT+CMSS"
+    category: "sms"
+    persistence_tracked: false
+    reason_not_tracked: "Send action; no persistent parameter."
+  - command: "AT+CMGD"
+    category: "sms"
+    persistence_tracked: false
+    reason_not_tracked: "Delete action; no persistent parameter."

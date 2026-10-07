@@ -1,0 +1,42 @@
+# Registry of allowed persistence modes
+modes:
+  auto_save:
+    description: "Parameter is automatically stored in NVRAM without explicit AT&W."
+    requires_save_command: false
+    is_persistent: true
+    is_factory_locked: false
+  explicit_save:
+    description: "Parameter is stored only with AT&W or AT&W0/AT&W1."
+    requires_save_command: true
+    is_persistent: true
+    is_factory_locked: false
+  volatile:
+    description: "Parameter is lost after reset or power loss."
+    requires_save_command: false
+    is_persistent: false
+    is_factory_locked: false
+  factory_locked:
+    description: "Parameter cannot be changed or saved by user."
+    requires_save_command: false
+    is_persistent: true
+    is_factory_locked: true
+  profile_specific:
+    description: "Parameter is stored in a specific user profile and restored with ATZ<n>."
+    requires_save_command: false
+    is_persistent: true
+    is_factory_locked: false
+  conditional:
+    description: "Persistence depends on specific conditions described in notes. Values below are conservative defaults."
+    requires_save_command: false
+    is_persistent: false
+    is_factory_locked: false
+  unknown:
+    description: "Persistence behaviour is not documented in the PDF."
+    requires_save_command: false
+    is_persistent: false
+    is_factory_locked: false
+  momentary_action:
+    description: "Command performs an action and has no persistent parameter."
+    requires_save_command: false
+    is_persistent: false
+    is_factory_locked: false

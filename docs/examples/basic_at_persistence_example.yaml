@@ -1,0 +1,11 @@
+# Example: basic AT persistence entry
+command: "AT+IPR"
+parameter_name: "rate"
+persistence_mode: "auto_save"
+save_command: ""
+save_scope: "not_applicable"
+power_loss_behavior: "retained"
+reset_behavior: "retained"
+factory_reset_behavior: "retained"
+requires_reboot: true
+notes: "Baud rate is stored automatically in NVRAM."

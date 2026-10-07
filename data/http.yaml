@@ -1,0 +1,57 @@
+metadata:
+  description: "HTTP AT command persistence modes"
+  schema_version: "1.0.0"
+  database_version: "1.0.0"
+  extracted_from:
+    - "SIM800 Series_AT Command Manual_V1.01.pdf"
+    - "SIM800 Series_AT Command Manual_V1.10.pdf"
+    - "SIM800 Series_AT Command Manual_V1.12.pdf"
+
+entries:
+  - command: "AT+HTTPPARA"
+    parameter_name: "cid"
+    profile_number: null
+    category: "http"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 8, Section AT+HTTPPARA"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 260
+    notes: "CID is a per-session parameter; inferred from AT command manual."
+
+  - command: "AT+HTTPPARA"
+    parameter_name: "url"
+    profile_number: null
+    category: "http"
+    persistence_mode: "volatile"
+    save_command: ""
+    save_scope: "not_applicable"
+    nvram_address: null
+    power_loss_behavior: "lost"
+    reset_behavior: "reset_to_default"
+    factory_reset_behavior: "retained"
+    requires_reboot: false
+    is_volatile: true
+    is_factory_locked: false
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+    source_section: "Chapter 8, Section AT+HTTPPARA"
+    extraction_status_latest: "not_specified"
+    presence_status_latest: "present"
+    representative_version: "V1.12"
+    available_in_versions: ["V1.01", "V1.10", "V1.12"]
+    version_specific: []
+    page_hint: 260
+    notes: "URL parameter is per-session; inferred from AT command manual."

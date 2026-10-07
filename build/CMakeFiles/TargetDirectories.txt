@@ -1,0 +1,6 @@
+D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build/CMakeFiles/generate.dir
+D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build/CMakeFiles/test_generated_headers.dir
+D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build/CMakeFiles/test_doc_examples.dir
+D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build/CMakeFiles/test.dir
+D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build/CMakeFiles/edit_cache.dir
+D:/Project/Electronic Project/Control Board SMS 2/Documents/New folder (2)/New/6- sim800-at-persistence-modes/001/build/CMakeFiles/rebuild_cache.dir

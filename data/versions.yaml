@@ -1,0 +1,26 @@
+# SIM800 AT Command Manual versions
+versions:
+  - id: "V1.01"
+    order: 1
+    source_document: "SIM800 Series_AT Command Manual_V1.01.pdf"
+  - id: "V1.10"
+    order: 2
+    source_document: "SIM800 Series_AT Command Manual_V1.10.pdf"
+  - id: "V1.12"
+    order: 3
+    source_document: "SIM800 Series_AT Command Manual_V1.12.pdf"
+latest: "V1.12"
+
+persistence_commands:
+  save:
+    base: "AT&W"
+    derivatives: ["AT&W0", "AT&W1"]
+  restore_profile:
+    base: "ATZ"
+    derivatives: ["ATZ0", "ATZ1"]
+  restore_factory:
+    base: "AT&F"
+    derivatives: ["AT&F0", "AT&F1"]
+  view_config:
+    base: "AT&V"
+    derivatives: ["AT&V0", "AT&V1"]
