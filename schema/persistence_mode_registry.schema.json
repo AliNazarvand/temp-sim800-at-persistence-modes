@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Persistence mode registry",
+  "type": "object",
+  "required": ["modes"],
+  "additionalProperties": false,
+  "properties": {
+    "modes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["description","requires_save_command","is_persistent","is_factory_locked"],
+        "additionalProperties": false,
+        "properties": {
+          "description": {"type":"string"},
+          "requires_save_command": {"type":"boolean"},
+          "is_persistent": {"type":"boolean"},
+          "is_factory_locked": {"type":"boolean"}
+        }
+      }
+    }
+  }
+}

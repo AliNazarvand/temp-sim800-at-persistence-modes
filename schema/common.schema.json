@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Common definitions",
+  "definitions": {
+    "persistence_mode": {
+      "type": "string",
+      "enum": ["auto_save","explicit_save","volatile","factory_locked",
+               "profile_specific","conditional","unknown","momentary_action"]
+    },
+    "save_scope": {
+      "type": "string",
+      "enum": ["profile_0","profile_1","both_profiles","factory_only","not_applicable"]
+    },
+    "power_loss_behavior": {
+      "type": "string",
+      "enum": ["retained","lost","reset_to_default","unknown","not_applicable"]
+    },
+    "reset_behavior": {
+      "type": "string",
+      "enum": ["retained","reset_to_default","reset_to_profile","unknown","not_applicable"]
+    },
+    "factory_reset_behavior": {
+      "type": "string",
+      "enum": ["reset_to_factory_default","retained","unknown","not_applicable"]
+    },
+    "extraction_status": {
+      "type": "string",
+      "enum": ["extracted_from_table","extracted_from_text","not_specified"]
+    },
+    "presence_status": {
+      "type": "string",
+      "enum": ["present","explicitly_removed","not_mentioned"]
+    },
+    "version_entry": {
+      "type": "object",
+      "required": ["version","presence_status","extraction_status"],
+      "additionalProperties": false,
+      "properties": {
+        "version": {"type": "string", "minLength": 1},
+        "persistence_mode": {"$ref": "#/definitions/persistence_mode"},
+        "persistence_mode_same_as_representative": {"type": "boolean"},
+        "save_command": {"type": "string"},
+        "save_command_same_as_representative": {"type": "boolean"},
+        "save_scope": {"$ref": "#/definitions/save_scope"},
+        "save_scope_same_as_representative": {"type": "boolean"},
+        "profile_number": {"type": ["integer","null"]},
+        "profile_number_same_as_representative": {"type": "boolean"},
+        "power_loss_behavior": {"$ref": "#/definitions/power_loss_behavior"},
+        "power_loss_behavior_same_as_representative": {"type": "boolean"},
+        "reset_behavior": {"$ref": "#/definitions/reset_behavior"},
+        "reset_behavior_same_as_representative": {"type": "boolean"},
+        "factory_reset_behavior": {"$ref": "#/definitions/factory_reset_behavior"},
+        "factory_reset_behavior_same_as_representative": {"type": "boolean"},
+        "requires_reboot": {"type": "boolean"},
+        "requires_reboot_same_as_representative": {"type": "boolean"},
+        "is_volatile": {"type": "boolean"},
+        "is_volatile_same_as_representative": {"type": "boolean"},
+        "is_factory_locked": {"type": "boolean"},
+        "is_factory_locked_same_as_representative": {"type": "boolean"},
+        "presence_status": {"$ref": "#/definitions/presence_status"},
+        "extraction_status": {"$ref": "#/definitions/extraction_status"},
+        "source_document": {"type": "string"},
+        "source_document_same_as_representative": {"type": "boolean"},
+        "source_section": {"type": "string"},
+        "source_section_same_as_representative": {"type": "boolean"},
+        "page_hint": {"type": ["integer","null"]},
+        "page_hint_same_as_representative": {"type": "boolean"}
+      }
+    },
+    "persistence_entry": {
+      "type": "object",
+      "required": [
+        "command","parameter_name","category","persistence_mode",
+        "save_command","save_scope","power_loss_behavior",
+        "reset_behavior","factory_reset_behavior",
+        "requires_reboot","is_volatile","is_factory_locked",
+        "source_document","source_section",
+        "extraction_status_latest","presence_status_latest",
+        "representative_version","available_in_versions"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "command": {"type": "string", "minLength": 1},
+        "parameter_name": {"type": "string", "minLength": 1},
+        "profile_number": {"type": ["integer","null"]},
+        "category": {
+          "type": "string",
+          "enum": ["at_basic","at_3gpp_27007","at_3gpp_27005","sms",
+                   "gprs","tcpip","http","ftp","audio","stk","init"]
+        },
+        "persistence_mode": {"$ref": "#/definitions/persistence_mode"},
+        "save_command": {"type": "string"},
+        "save_scope": {"$ref": "#/definitions/save_scope"},
+        "nvram_address": {"type": ["string","null"]},
+        "power_loss_behavior": {"$ref": "#/definitions/power_loss_behavior"},
+        "reset_behavior": {"$ref": "#/definitions/reset_behavior"},
+        "factory_reset_behavior": {"$ref": "#/definitions/factory_reset_behavior"},
+        "requires_reboot": {"type": "boolean"},
+        "is_volatile": {"type": "boolean"},
+        "is_factory_locked": {"type": "boolean"},
+        "source_document": {"type": "string", "minLength": 1},
+        "source_section": {"type": "string", "minLength": 1},
+        "extraction_status_latest": {"$ref": "#/definitions/extraction_status"},
+        "presence_status_latest": {"$ref": "#/definitions/presence_status"},
+        "representative_version": {"type": "string", "minLength": 1},
+        "available_in_versions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "version_specific": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/version_entry"}
+        },
+        "page_hint": {"type": ["integer","null"]},
+        "notes": {"type": "string"}
+      }
+    }
+  }
+}

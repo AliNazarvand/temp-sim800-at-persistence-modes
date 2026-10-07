@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Category mapping",
+  "type": "object",
+  "required": ["categories"],
+  "additionalProperties": false,
+  "properties": {
+    "categories": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["category","yaml_file","cpp_header","cpp_namespace","cpp_array_name"],
+        "additionalProperties": false,
+        "properties": {
+          "category": {"type":"string"},
+          "yaml_file": {"type":"string"},
+          "cpp_header": {"type":"string"},
+          "cpp_namespace": {"type":"string"},
+          "cpp_array_name": {"type":"string"}
+        }
+      }
+    }
+  }
+}

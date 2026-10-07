@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Versions",
+  "type": "object",
+  "required": ["versions","latest"],
+  "additionalProperties": false,
+  "properties": {
+    "versions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id","order","source_document"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type":"string"},
+          "order": {"type":"integer"},
+          "source_document": {"type":"string"}
+        }
+      }
+    },
+    "latest": {"type":"string"},
+    "persistence_commands": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["base","derivatives"],
+        "properties": {
+          "base": {"type":"string"},
+          "derivatives": {"type":"array","items":{"type":"string"}}
+        }
+      }
+    }
+  }
+}
